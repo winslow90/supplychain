@@ -53,7 +53,7 @@
              -->
             <property name="mappingDirectoryLocations">
                     <list>
-                            <value>classpath:com/su90d/supplychain/domain</value>
+                            <value>classpath:/com/su90d/supplychain/hibernate</value>
                     </list>
             </property>
             <property name="hibernateProperties">

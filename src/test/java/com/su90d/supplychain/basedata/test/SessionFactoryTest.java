@@ -6,6 +6,8 @@
 package com.su90d.supplychain.basedata.test;
 
 import com.su90d.supplychain.test.utils.SpringUtils;
+import org.hibernate.SessionFactory;
+import org.hibernate.classic.Session;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -29,5 +31,14 @@ public class SessionFactoryTest extends SpringUtils {
         
         context.getBean("sessionFactory");
         
-    }    
+    }
+    
+    @Test
+    public void testCountProduct(){
+            SessionFactory sessionFactory = (SessionFactory)context.getBean("sessionFactory");
+            Session session = sessionFactory.openSession();
+            Long count = (Long)session.createQuery("select count(*) from Department").uniqueResult();
+            System.out.println(count);
+            session.close();
+    }
 }
