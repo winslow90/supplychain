@@ -45,7 +45,7 @@ public class BaseDaoImpl <T> implements BaseDao <T>  {
     }
     
     @Resource(name="hibernateTemplate")
-    public HibernateTemplate hibernateTemplate;
+    protected HibernateTemplate hibernateTemplate;
 
     public HibernateTemplate getHibernateTemplate() {
         return hibernateTemplate;
