@@ -6,7 +6,7 @@
 <struts>
 	<constant name="struts.devMode" value="true"/>
 	<constant name="struts.ui.theme" value="simple"/>
-	<include file="cn/itcast/gyl/struts/xsgl/struts-xsydd.xml"></include>
-	<include file="cn/itcast/gyl/struts/xsgl/struts-xsdd.xml"></include>
-	<include file="cn/itcast/gyl/struts/xsgl/struts-xsckd.xml"></include>
+	<include file="com/su90/gyl/struts/xsgl/struts-xsydd.xml"></include>
+	<include file="com/su90/gyl/struts/xsgl/struts-xsdd.xml"></include>
+	<include file="com/su90/gyl/struts/xsgl/struts-xsckd.xml"></include>
 </struts>
