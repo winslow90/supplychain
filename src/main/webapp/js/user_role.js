@@ -84,8 +84,8 @@ var user_role = {
                     else {
                         $("#allchecked").attr("checked", false);
                     }
-                    //设置全选复选框为可用
-                    $("#allchecked").attr("disabled","");
+					//设置全选复选框为可用
+					$("#allchecked").attr("disabled","");
                 });
             },
             /**
